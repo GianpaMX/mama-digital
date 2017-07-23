@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Mama Digital</string>
-    <string name="balh_blah_blah">"Balh blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah\n\nBalh blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah\n\nBalh blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"<br/>
+    <string name="balh_blah_blah">"Balh blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah\n\nBalh blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah\n\nBalh blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah"<br />
     </string>
+    <string name="clothes_activity_title">Clothes</string>
+    <string name="details_activity_title">Details</string>
 </resources>
