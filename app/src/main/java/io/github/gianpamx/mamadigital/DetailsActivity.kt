@@ -24,5 +24,6 @@ class DetailsActivity : AppCompatActivity() {
 
         imageView.setImageResource(clothes.image)
         titleTextView.text = clothes.title
+        descriptionTextView.text = clothes.description
     }
 }

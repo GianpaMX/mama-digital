@@ -4,6 +4,7 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.clothes_listing_item.view.*
 
 class ClothesAdapter(var clothes: List<Clothes>, var listener: OnClothesSelected?) : RecyclerView.Adapter<ClothesAdapter.CategoryHolder>() {
@@ -19,8 +20,12 @@ class ClothesAdapter(var clothes: List<Clothes>, var listener: OnClothesSelected
 
     class CategoryHolder(itemView: View, val listener: OnClothesSelected?) : RecyclerView.ViewHolder(itemView) {
         fun bind(clothes: Clothes) {
-            itemView.imageView.setImageResource(clothes.image)
+            Glide.with(itemView.context).load(clothes.image).centerCrop().into(itemView.imageView)
+
+            itemView.imageView.isClickable = false
+            itemView.titleTextView.isClickable = false
             itemView.titleTextView.text = clothes.title
+            itemView.isClickable = true
             itemView.setOnClickListener { listener?.onCategorySelected(clothes) }
         }
     }

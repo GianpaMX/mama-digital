@@ -20,10 +20,10 @@ class ClothesListingActivity : AppCompatActivity(), ClothesAdapter.OnClothesSele
 
         setTitle(R.string.clothes_activity_title)
 
-        categories.add(Clothes("Sweater", R.drawable.baby1))
-        categories.add(Clothes("Pants", R.drawable.baby2))
-        categories.add(Clothes("Jacket", R.drawable.baby3))
-        categories.add(Clothes("Pants", R.drawable.baby1))
+        categories.add(Clothes("Sweater", R.drawable.baby1, ""))
+        categories.add(Clothes("Pants", R.drawable.baby2, ""))
+        categories.add(Clothes("Jacket", R.drawable.baby3, ""))
+        categories.add(Clothes("Pants", R.drawable.baby1, ""))
 
         categoryRecyclerView.setHasFixedSize(true)
         categoryRecyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
